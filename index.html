@@ -583,7 +583,7 @@ const seasonSorted=l=>[...l.seasons].sort((a,b)=>String(b.name).localeCompare(St
 const newestOf=l=>seasonSorted(l)[0];
 const seasonSummary=x=>`${x.data.members.length} players · ${x.data.weeks.length} wk`;
 /* league site: no seeds; one league, live from the sync server, this phone claims one name */
-const SHARE_LEAGUE={id:'mvoavp2jh3',key:'6abuhkgf7gzvkstnkwb5',url:'https://bozo-sync.jsunaldo.workers.dev'};
+const SHARE_LEAGUE={id:'o77nefhml4',key:'4vm2wvv54ecpzrazh80a',url:'https://bozo-sync.jsunaldo.workers.dev'};
 function migrateDB(d){return d}
 function loadDB(){let d=null;try{const r=localStorage.getItem(KEY2);if(r)d=JSON.parse(r)}catch(e){}
   if(!d||!Array.isArray(d.leagues))d={leagues:[],active:null,seedV:99};
